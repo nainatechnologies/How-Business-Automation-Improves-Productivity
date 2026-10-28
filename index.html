@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Business Automation Improves Productivity | Naina Technologies Blog</title>
+  <meta name="description" content="Discover how business automation empowers enterprises to eliminate manual bottlenecks, scale productivity, and achieve exponential operational efficiency with Naina Technologies.">
+  <link rel="icon" type="image/png" href="assets/naina_logo_trans.png">
+
+  <!-- Modern Google Fonts: Plus Jakarta Sans for UI, Newsreader for editorial headlines, Caveat for handwritten cursive -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- Logo -->
+        <a href="#home" class="brand-link" id="brand-logo" aria-label="Naina Technologies Home">
+          <img src="assets/naina_logo_trans.png" alt="Naina Technologies Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#discovery-hub" class="nav-link">Technology Hub</a>
+          <a href="#spotlight" class="nav-link">Spotlight</a>
+          <a href="#how-we-help" class="nav-link">How We Help</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle dark mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <a href="#contact" class="btn-subscribe-nav" id="nav-contact-btn">
+            Contact Us
+          </a>
+
+          <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle menu" onclick="showToast('Menu opened', '📱')">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO / FEATURED POST SECTION (Exact Layout Match)
+       ========================================================================== -->
+  <main id="home">
+    <!-- ==========================================================================
+         EXECUTIVE BRIEFING / HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="featured">
+      <div class="container">
+        <div class="featured-card" id="featured-hero-card">
+          <!-- Left Text Content -->
+          <div class="featured-content">
+            <div class="featured-badge" id="hero-badge">TECHNOLOGY BRIEFING</div>
+            <h1 class="featured-title" id="hero-title" onclick="openArticleModal('post-featured')">
+              How Business Automation Improves Productivity
+            </h1>
+            <div class="featured-tagline" id="hero-tagline" style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary); margin-bottom: 12px; letter-spacing: -0.01em;">
+              Smarter Workflows. Less Manual Effort. Better Business Results.
+            </div>
+            <p class="featured-excerpt" id="hero-excerpt">
+              In today's fast-moving digital world, businesses need to work smarter, faster, and more efficiently. Repetitive tasks and disconnected systems slow down growth—business automation simplifies operations by performing routine tasks, streamlining workflows, and driving exponential productivity.
+            </p>
+
+            <div class="featured-meta-row">
+              <button class="btn-read-more" id="hero-read-more-btn" onclick="openArticleModal('post-featured')">
+                Explore Technology Guide <span class="arrow-icon">→</span>
+              </button>
+
+              <div class="featured-meta-info">
+                <span class="meta-item" style="color: var(--color-primary); font-weight: 700; font-size: 0.95rem;">Naina Technologies Briefing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image Container -->
+          <div class="featured-image-wrapper" onclick="openArticleModal('post-featured')">
+            <img src="assets/hero_automation.jpg" alt="How Business Automation Improves Productivity at Naina Technologies" class="featured-image" id="hero-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MAIN CONTENT & SIDEBAR 2-COLUMN COMPACT LAYOUT
+         Faithful to Original Blog Template Structure & Proportions
+         ========================================================================== -->
+    <section class="main-layout-section" id="discovery-hub">
+      <div class="container">
+        <div class="content-grid-wrapper">
+
+          <!-- ====================================================================
+               LEFT COLUMN (Main Content Area ~68%)
+               ==================================================================== -->
+          <div class="main-feed-column">
+
+            <!-- Section Header -->
+            <div class="latest-posts-section">
+              <div class="section-header-bar" style="margin-bottom: 6px;">
+                <h2 class="section-title">Explore Technology</h2>
+              </div>
+              <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0 0 18px; line-height: 1.5;">
+                Discover the technologies helping businesses innovate, connect, and grow.
+              </p>
+
+              <!-- Category Filter Chips -->
+              <div class="category-filter-chips">
+                <button class="filter-chip active" data-category="all">All Topics</button>
+                <button class="filter-chip" data-category="web">Web Development</button>
+                <button class="filter-chip" data-category="ai">AI & Automation</button>
+                <button class="filter-chip" data-category="cloud">Cloud & DevOps</button>
+                <button class="filter-chip" data-category="enterprise">Enterprise Integration</button>
+                <button class="filter-chip" data-category="software">Custom Software</button>
+              </div>
+
+              <!-- 6 Compact Technology Cards Grid -->
+              <div class="latest-posts-grid" id="technology-cards-grid">
+
+                <!-- Card 1 — Web Development -->
+                <article class="blog-card" data-category="web" onclick="openTopicModal('web')">
+                  <div class="card-thumb-wrapper">
+                    <img src="assets/card_webdev.jpg" alt="Modern Web Development" class="card-thumb-img" loading="lazy">
+                    <span class="card-badge badge-web">Web Development</span>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-post-title">Modern Web Development</h3>
+                    <p class="card-desc">
+                      Explore responsive websites, web applications, and engaging digital experiences.
+                    </p>
+                    <div class="card-link-row">
+                      <span class="card-explore-link">Explore Topic →</span>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 2 — AI & Automation -->
+                <article class="blog-card" data-category="ai" onclick="openTopicModal('ai')">
+                  <div class="card-thumb-wrapper">
+                    <img src="assets/post_tools.jpg" alt="Smarter Business Automation" class="card-thumb-img" loading="lazy">
+                    <span class="card-badge badge-ai">AI & Automation</span>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-post-title">Smarter Business Automation</h3>
+                    <p class="card-desc">
+                      Discover how intelligent workflows help reduce repetitive tasks and improve productivity.
+                    </p>
+                    <div class="card-link-row">
+                      <span class="card-explore-link">Explore Topic →</span>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 3 — Cloud & DevOps -->
+                <article class="blog-card" data-category="cloud" onclick="openTopicModal('cloud')">
+                  <div class="card-thumb-wrapper">
+                    <img src="assets/insta_server.jpg" alt="Cloud Technology Explained" class="card-thumb-img" loading="lazy">
+                    <span class="card-badge badge-cloud">Cloud & DevOps</span>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-post-title">Cloud Technology Explained</h3>
+                    <p class="card-desc">
+                      Learn how cloud infrastructure and DevOps help businesses scale efficiently.
+                    </p>
+                    <div class="card-link-row">
+                      <span class="card-explore-link">Explore Topic →</span>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 4 — Enterprise Integration -->
+                <article class="blog-card" data-category="enterprise" onclick="openTopicModal('enterprise')">
+                  <div class="card-thumb-wrapper">
+                    <img src="assets/post_strategy.jpg" alt="Connecting Business Systems" class="card-thumb-img" loading="lazy">
+                    <span class="card-badge badge-enterprise">Enterprise Integration</span>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-post-title">Connecting Business Systems</h3>
+                    <p class="card-desc">
+                      Understand how APIs connect applications and enable smoother data exchange.
+                    </p>
+                    <div class="card-link-row">
+                      <span class="card-explore-link">Explore Topic →</span>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 5 — Custom Software -->
+                <article class="blog-card" data-category="software" onclick="openTopicModal('software')">
+                  <div class="card-thumb-wrapper">
+                    <img src="assets/post_camera.jpg" alt="Software Built for Your Business" class="card-thumb-img" loading="lazy">
+                    <span class="card-badge badge-software">Custom Software</span>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-post-title">Software Built for Your Business</h3>
+                    <p class="card-desc">
+                      Discover tailored digital solutions designed around unique business requirements.
+                    </p>
+                    <div class="card-link-row">
+                      <span class="card-explore-link">Explore Topic →</span>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 6 — Digital Transformation -->
+                <article class="blog-card" data-category="transformation" onclick="openTopicModal('transformation')">
+                  <div class="card-thumb-wrapper">
+                    <img src="assets/insta_team.jpg" alt="Transforming Business Operations" class="card-thumb-img" loading="lazy">
+                    <span class="card-badge badge-transformation">Digital Transformation</span>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-post-title">Transforming Business Operations</h3>
+                    <p class="card-desc">
+                      Explore how modern technology can simplify workflows and support growth.
+                    </p>
+                    <div class="card-link-row">
+                      <span class="card-explore-link">Explore Topic →</span>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Trending Technology Topics (Placed Beside Digital Transformation) -->
+                <div class="trending-topics-card" id="trending-topics">
+                  <div class="section-header-bar" style="margin-bottom: 12px;">
+                    <h3 class="section-title" style="font-size: 1.12rem;">Trending Technology Topics</h3>
+                  </div>
+
+                  <div class="trending-articles-list">
+                    <div class="trending-item" onclick="openTopicModal('ai')">
+                      <div class="trending-number-badge">1</div>
+                      <span class="trending-item-title">Business Automation</span>
+                    </div>
+                    <div class="trending-item" onclick="openTopicModal('enterprise')">
+                      <div class="trending-number-badge">2</div>
+                      <span class="trending-item-title">API Integration</span>
+                    </div>
+                    <div class="trending-item" onclick="openTopicModal('cloud')">
+                      <div class="trending-number-badge">3</div>
+                      <span class="trending-item-title">Cloud Computing</span>
+                    </div>
+                    <div class="trending-item" onclick="openTopicModal('software')">
+                      <div class="trending-number-badge">4</div>
+                      <span class="trending-item-title">Custom Software</span>
+                    </div>
+                    <div class="trending-item" onclick="openTopicModal('transformation')">
+                      <div class="trending-number-badge">5</div>
+                      <span class="trending-item-title">Digital Transformation</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div><!-- /main-feed-column -->
+
+          <!-- ====================================================================
+               RIGHT COLUMN (Sidebar Area ~32%)
+               ==================================================================== -->
+          <aside class="sidebar-column" aria-label="Technology Hub Sidebar">
+
+            <!-- Widget 1: Technology Spotlight -->
+            <div class="sidebar-widget-card" id="spotlight">
+              <div class="section-header-bar" style="margin-bottom: 16px;">
+                <h3 class="section-title" style="font-size: 1.15rem;">Technology Spotlight</h3>
+              </div>
+
+              <div class="popular-posts-list">
+                <!-- Item 1 -->
+                <div class="popular-post-row" onclick="openTopicModal('ai')" title="The Role of AI in Modern Business">
+                  <img src="assets/post_tools.jpg" alt="The Role of AI in Modern Business" class="popular-post-thumb">
+                  <div class="popular-post-content">
+                    <h4 class="popular-post-title">The Role of AI in Modern Business</h4>
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--color-primary);">Explore Topic →</span>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="popular-post-row" onclick="openTopicModal('enterprise')" title="Why API Integration Matters">
+                  <img src="assets/post_strategy.jpg" alt="Why API Integration Matters" class="popular-post-thumb">
+                  <div class="popular-post-content">
+                    <h4 class="popular-post-title">Why API Integration Matters</h4>
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--color-primary);">Explore Topic →</span>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="popular-post-row" onclick="openTopicModal('cloud')" title="Building Scalable Digital Solutions">
+                  <img src="assets/insta_server.jpg" alt="Building Scalable Digital Solutions" class="popular-post-thumb">
+                  <div class="popular-post-content">
+                    <h4 class="popular-post-title">Building Scalable Digital Solutions</h4>
+                    <span style="font-size: 0.78rem; font-weight: 700; color: var(--color-primary);">Explore Topic →</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Widget 2: Need a Technology Solution? -->
+            <div class="sidebar-widget-card cta-solution-card">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; font-size: 1.3rem;">
+                💡
+              </div>
+              <h3 style="font-size: 1.12rem; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">
+                Need a Technology Solution?
+              </h3>
+              <p style="font-size: 0.86rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 20px;">
+                Partner with Naina Technologies to modernize workflows, connect enterprise systems, and accelerate growth.
+              </p>
+              <a href="#contact" class="btn-green-cta">
+                Contact Us →
+              </a>
+            </div>
+
+          </aside>
+        </div><!-- /content-grid-wrapper -->
+
+        <!-- ====================================================================
+             FULL-WIDTH FEATURED TECHNOLOGY CATEGORIES BOX
+             Spans 100% of container length/width, colorful & attractive
+             ==================================================================== -->
+        <div class="featured-tech-full-box" id="categories">
+          <div class="featured-tech-header">
+            <div class="featured-tech-header-text">
+              <div class="featured-tech-eyebrow">
+                <span class="eyebrow-dot"></span>
+                <span>CORE SPECIALTIES & COMPETENCIES</span>
+              </div>
+              <h2 class="featured-tech-main-title">Featured Technology Categories</h2>
+              <p class="featured-tech-subtitle">
+                Explore our foundational technology pillars engineered to scale digital performance, automate repetitive workflows, and drive enterprise innovation.
+              </p>
+            </div>
+            <div class="featured-tech-header-actions">
+              <span class="featured-tech-count-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                4 Core Domains
+              </span>
+            </div>
+          </div>
+
+          <div class="featured-tech-cards-grid">
+            <!-- 1. Web Development -->
+            <div class="feat-card feat-card-teal" onclick="openTopicModal('web')" role="button" tabindex="0" title="Explore Web Development">
+              <div class="feat-card-accent-bar"></div>
+              <div class="feat-card-top">
+                <div class="feat-icon-bubble">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <span class="feat-tag-pill">Web Architecture</span>
+              </div>
+              <h3 class="feat-card-title">Web Development</h3>
+              <p class="feat-card-desc">
+                High-performance web applications, responsive client portals, modern component architectures, and intuitive digital interfaces.
+              </p>
+              <div class="feat-tags-row">
+                <span class="feat-micro-tag">Frontend & Backend</span>
+                <span class="feat-micro-tag">React / Node</span>
+                <span class="feat-micro-tag">PWAs</span>
+              </div>
+              <div class="feat-card-action">
+                <span>Explore Domain</span>
+                <span class="feat-action-arrow">→</span>
+              </div>
+            </div>
+
+            <!-- 2. AI & Automation -->
+            <div class="feat-card feat-card-blue" onclick="openTopicModal('ai')" role="button" tabindex="0" title="Explore AI & Automation">
+              <div class="feat-card-accent-bar"></div>
+              <div class="feat-card-top">
+                <div class="feat-icon-bubble">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+                </div>
+                <span class="feat-tag-pill">Intelligent RPA</span>
+              </div>
+              <h3 class="feat-card-title">AI & Automation</h3>
+              <p class="feat-card-desc">
+                Intelligent business process automation, predictive machine learning models, and smart orchestrations that eliminate manual bottlenecks.
+              </p>
+              <div class="feat-tags-row">
+                <span class="feat-micro-tag">Workflow Automation</span>
+                <span class="feat-micro-tag">NLP & ML</span>
+                <span class="feat-micro-tag">RPA</span>
+              </div>
+              <div class="feat-card-action">
+                <span>Explore Domain</span>
+                <span class="feat-action-arrow">→</span>
+              </div>
+            </div>
+
+            <!-- 3. Cloud & DevOps -->
+            <div class="feat-card feat-card-purple" onclick="openTopicModal('cloud')" role="button" tabindex="0" title="Explore Cloud & DevOps">
+              <div class="feat-card-accent-bar"></div>
+              <div class="feat-card-top">
+                <div class="feat-icon-bubble">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                </div>
+                <span class="feat-tag-pill">Infrastructure</span>
+              </div>
+              <h3 class="feat-card-title">Cloud & DevOps</h3>
+              <p class="feat-card-desc">
+                Scalable multi-cloud environments, automated CI/CD deployment pipelines, containerization, and continuous proactive monitoring.
+              </p>
+              <div class="feat-tags-row">
+                <span class="feat-micro-tag">AWS & Azure</span>
+                <span class="feat-micro-tag">Docker / K8s</span>
+                <span class="feat-micro-tag">CI/CD</span>
+              </div>
+              <div class="feat-card-action">
+                <span>Explore Domain</span>
+                <span class="feat-action-arrow">→</span>
+              </div>
+            </div>
+
+            <!-- 4. Enterprise Solutions -->
+            <div class="feat-card feat-card-green" onclick="openTopicModal('enterprise')" role="button" tabindex="0" title="Explore Enterprise Solutions">
+              <div class="feat-card-accent-bar"></div>
+              <div class="feat-card-top">
+                <div class="feat-icon-bubble">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <span class="feat-tag-pill">Integration & APIs</span>
+              </div>
+              <h3 class="feat-card-title">Enterprise Solutions</h3>
+              <p class="feat-card-desc">
+                Unified ERP architectures, secure CRM system synchronization, API gateways, and custom mission-critical enterprise workflows.
+              </p>
+              <div class="feat-tags-row">
+                <span class="feat-micro-tag">API Connectivity</span>
+                <span class="feat-micro-tag">ERP / CRM</span>
+                <span class="feat-micro-tag">Scalability</span>
+              </div>
+              <div class="feat-card-action">
+                <span>Explore Domain</span>
+                <span class="feat-action-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </section>
+
+    <!-- ==========================================================================
+         HOW NAINA TECHNOLOGIES HELPS
+         ========================================================================== -->
+    <section class="how-we-help-section" id="how-we-help" style="margin-top: 10px; margin-bottom: 50px;">
+      <div class="container">
+        <div class="hub-header-center" style="text-align: center; max-width: 760px; margin: 0 auto 36px;">
+          <h2 class="hub-main-heading" style="font-family: var(--font-serif); font-size: 2.3rem; font-weight: 700; color: var(--text-main); margin-bottom: 10px;">
+            How Naina Technologies Helps Businesses
+          </h2>
+          <p class="hub-sub-heading" style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.6;">
+            Practical, scalable technology solutions designed to modernize your workflows and support long-term business growth.
+          </p>
+        </div>
+
+        <div class="help-services-grid">
+          <!-- Pillar 1 -->
+          <div class="help-service-card" onclick="openTopicModal('software')">
+            <div class="help-icon-circle">🛠️</div>
+            <h3 class="help-service-title">Custom Software Development</h3>
+            <p class="help-service-desc">
+              Tailored web and mobile applications designed specifically around your unique business operations, customer journeys, and internal workflows.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="help-service-card" onclick="openTopicModal('enterprise')">
+            <div class="help-icon-circle">🔄</div>
+            <h3 class="help-service-title">API & Enterprise Integration</h3>
+            <p class="help-service-desc">
+              Connecting disparate ERP, CRM, payment systems, and third-party SaaS platforms to enable seamless, real-time data exchange across your enterprise.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="help-service-card" onclick="openTopicModal('cloud')">
+            <div class="help-icon-circle">☁️</div>
+            <h3 class="help-service-title">Cloud & DevOps</h3>
+            <p class="help-service-desc">
+              Architecting secure cloud environments, automated deployment pipelines, and proactive infrastructure monitoring to ensure optimal uptime.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="help-service-card" onclick="openTopicModal('transformation')">
+            <div class="help-icon-circle">🚀</div>
+            <h3 class="help-service-title">Digital Transformation</h3>
+            <p class="help-service-desc">
+              Modernizing traditional business operations by replacing repetitive manual tasks with intelligent, future-proof automation solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CALL TO ACTION: CONTACT NAINA TECHNOLOGIES
+         ========================================================================== -->
+    <section class="challenge-cta-section" id="cta" style="margin-bottom: 60px;">
+      <div class="container">
+        <div class="challenge-cta-banner">
+          <h2 class="challenge-cta-title">Have a Technology Challenge?</h2>
+          <p class="challenge-cta-sub">
+            Let's build a smarter digital future for your business.
+          </p>
+          <a href="#contact" class="btn-contact-naina">
+            Contact Naina Technologies
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FULL ARTICLE MODAL / LONGFORM READER
+       Dedicated In-Depth Post: "How Business Automation Improves Productivity"
+       for Naina Technologies
+       ========================================================================== -->
+  <div class="article-modal-backdrop" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-article-title">
+    <div class="article-modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close article">✕</button>
+
+      <article class="article-reader-content">
+        <!-- Breadcrumbs -->
+        <nav class="article-breadcrumb">
+          <a href="#home" onclick="closeArticleModal()">Home</a>
+          <span>/</span>
+          <a href="#discovery-hub" onclick="closeArticleModal()">Technology Hub</a>
+          <span>/</span>
+          <span style="color: var(--color-primary); font-weight: 600;">How Business Automation Improves Productivity</span>
+        </nav>
+
+        <!-- Article Headline & Tagline -->
+        <h1 class="article-headline" id="modal-article-title">
+          How Business Automation Improves Productivity
+        </h1>
+        <div id="modal-article-tagline" style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary); margin: -10px 0 24px;">
+          Smarter Workflows. Less Manual Effort. Better Business Results.
+        </div>
+
+        <!-- Metadata & Actions Bar -->
+        <div class="article-author-meta">
+          <div style="display: flex; align-items: center; gap: 10px; color: var(--text-muted); font-size: 0.92rem; font-weight: 600;">
+            <span style="color: var(--color-primary); font-weight: 800; letter-spacing: 0.04em;">NAINA TECHNOLOGIES</span>
+            <span>•</span>
+            <span>EXECUTIVE BRIEFING</span>
+          </div>
+
+          <div class="article-actions-row">
+            <button class="action-pill-btn" onclick="shareArticle()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              Share Article
+            </button>
+            <button class="action-pill-btn" onclick="showToast('Topic saved to your reading list!', '🔖')">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m19 21-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              Bookmark
+            </button>
+          </div>
+        </div>
+
+        <!-- Featured Banner Image -->
+        <img src="assets/hero_automation.jpg" alt="Executive automation workspace" class="article-lead-image" id="modal-lead-image">
+
+        <!-- Article Prose Body -->
+        <div class="article-prose" id="modal-article-prose">
+          <h2>Introduction</h2>
+          <p>
+            In today's fast-moving digital world, businesses need to work smarter, faster, and more efficiently to stay competitive. However, repetitive tasks, manual data entry, disconnected systems, and time-consuming processes can slow down business growth.
+          </p>
+          <p>
+            <strong>Business automation</strong> helps organizations simplify everyday operations by using technology to perform repetitive tasks, streamline workflows, and improve overall productivity. With the right automation strategy, businesses can save time, reduce operational complexity, and focus more on innovation and growth.
+          </p>
+
+          <blockquote>
+            "Smarter workflows lead to less manual effort and exponentially better business results."
+            <br><span style="font-size: 0.88rem; font-weight: 700; color: var(--color-primary); margin-top: 6px; display: inline-block;">— Naina Technologies Core Principle</span>
+          </blockquote>
+
+          <h2>What Is Business Automation?</h2>
+          <p>
+            Business automation is the use of technology to perform routine business activities with minimal manual intervention. It connects processes, systems, and data to help organizations operate more efficiently.
+          </p>
+
+          <div style="background: var(--bg-card-subtle); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 24px; margin: 24px 0;">
+            <h3 style="margin-top: 0; margin-bottom: 14px; font-size: 1.15rem; color: var(--color-primary); display: flex; align-items: center; gap: 8px;">
+              <span>⚡</span> Examples include:
+            </h3>
+            <ul style="padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 1rem; color: var(--text-main);">
+              <li><strong>Automating customer follow-up emails:</strong> Instantly nurturing leads and maintaining engagement without human delays.</li>
+              <li><strong>Generating invoices and reports automatically:</strong> Eliminating billing errors, speeding up accounts receivable, and compiling real-time financial snapshots.</li>
+              <li><strong>Managing leads through CRM systems:</strong> Routing inbound inquiries directly to the optimal sales rep with complete enriched profile data.</li>
+              <li><strong>Synchronizing data between business applications:</strong> Bridging the gap between ERP, accounting, inventory, and collaboration tools with zero manual export/import steps.</li>
+              <li><strong>Automating repetitive data entry and approval workflows:</strong> Multi-tiered manager approvals and compliance checkpoints handled asynchronously in seconds.</li>
+            </ul>
+          </div>
+
+          <p>
+            By reducing manual work, businesses can improve consistency and allow employees to concentrate on more valuable tasks that move the needle.
+          </p>
+
+          <!-- Key Takeaways Callout Box -->
+          <div class="key-takeaways-box" style="margin-top: 32px;">
+            <div class="takeaways-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Key Executive Benefits
+            </div>
+            <ul class="takeaways-list">
+              <li><strong>Reclaim 30% of Working Hours:</strong> Eliminate swivel-chair data copying and spreadsheet reconciliations.</li>
+              <li><strong>Zero Human Error:</strong> Automated validation checks reduce document and entry discrepancies to under 0.02%.</li>
+              <li><strong>Fast-Track Scalability:</strong> Expand transaction handling volume by 10x without proportional overhead costs.</li>
+              <li><strong>Empowered Talent:</strong> Team members shift from tedious administration to strategy, creative problem-solving, and client care.</li>
+            </ul>
+          </div>
+
+          <!-- 5 Ways Business Automation Improves Productivity Section -->
+          <h2>5 Ways Business Automation Improves Productivity</h2>
+          <div class="automation-ways-container">
+            <!-- 1. Reduces Repetitive Manual Work -->
+            <div class="automation-way-card">
+              <div class="way-number-badge">1</div>
+              <div class="way-content-block">
+                <h3 class="way-title-text">Reduces Repetitive Manual Work</h3>
+                <p class="way-body-text">
+                  Employees often spend significant time on routine activities such as updating spreadsheets, entering information, and preparing reports. Automation can handle many of these repetitive tasks, allowing teams to focus on planning, customer service, and business development.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2. Improves Accuracy and Consistency -->
+            <div class="automation-way-card">
+              <div class="way-number-badge">2</div>
+              <div class="way-content-block">
+                <h3 class="way-title-text">Improves Accuracy and Consistency</h3>
+                <p class="way-body-text">
+                  Manual processes can lead to data entry mistakes, missed updates, and inconsistent records. Automated workflows help standardize routine operations and reduce avoidable errors when properly configured and monitored.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3. Saves Time and Operational Resources -->
+            <div class="automation-way-card">
+              <div class="way-number-badge">3</div>
+              <div class="way-content-block">
+                <h3 class="way-title-text">Saves Time and Operational Resources</h3>
+                <p class="way-body-text">
+                  Automation can speed up processes such as invoice generation, appointment reminders, document handling, and routine notifications. Faster workflows help businesses use their time and resources more effectively.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. Connects Different Business Systems -->
+            <div class="automation-way-card">
+              <div class="way-number-badge">4</div>
+              <div class="way-content-block">
+                <h3 class="way-title-text">Connects Different Business Systems</h3>
+                <p class="way-body-text">
+                  When CRM platforms, websites, mobile applications, databases, and enterprise software operate separately, employees may need to enter the same information multiple times.
+                  <br><br>
+                  Through API development and integration platforms such as <strong>MuleSoft</strong>, businesses can connect their applications, synchronize data, and create smoother workflows across departments.
+                </p>
+              </div>
+            </div>
+
+            <!-- 5. Supports Business Growth -->
+            <div class="automation-way-card">
+              <div class="way-number-badge">5</div>
+              <div class="way-content-block">
+                <h3 class="way-title-text">Supports Business Growth</h3>
+                <p class="way-body-text">
+                  As a business expands, the volume of customers, transactions, and data also increases. Automated processes can help organizations handle growing workloads without increasing manual effort at the same rate.
+                  <br><br>
+                  Scalable software, cloud infrastructure, and well-designed workflows help businesses prepare for future demands.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive ROI Calculator Widget Embedded in Article -->
+          <div class="roi-calculator-widget" id="calculator">
+            <div class="calculator-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+              Interactive Automation ROI Calculator
+            </div>
+            <p class="calculator-sub">
+              Calculate your team’s projected productivity hours and cost savings with Naina Technologies automation pipelines.
+            </p>
+
+            <div class="calculator-sliders-grid">
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span>Team Size</span>
+                  <span class="slider-val-badge" id="val-team-size">25</span>
+                </div>
+                <input type="range" id="calc-team-size" class="calc-range-input" min="5" max="300" value="25" step="5" aria-label="Team Size">
+              </div>
+
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span>Avg. Hourly Wage</span>
+                  <span class="slider-val-badge" id="val-hourly-rate">$55</span>
+                </div>
+                <input type="range" id="calc-hourly-rate" class="calc-range-input" min="20" max="150" value="55" step="5" aria-label="Average Hourly Wage">
+              </div>
+
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span>Manual Hours / Wk</span>
+                  <span class="slider-val-badge" id="val-hours-wasted">10 hrs</span>
+                </div>
+                <input type="range" id="calc-hours-wasted" class="calc-range-input" min="2" max="25" value="10" step="1" aria-label="Manual Hours per week">
+              </div>
+            </div>
+
+            <div class="calculator-results-bar">
+              <div class="calc-stat-box">
+                <div class="stat-metric-number" id="res-hours-saved">9,000</div>
+                <div class="stat-metric-label">Annual Hours Reclaimed</div>
+              </div>
+              <div class="calc-stat-box">
+                <div class="stat-metric-number" id="res-cost-saved">$495,000</div>
+                <div class="stat-metric-label">Annual Operational Value</div>
+              </div>
+              <div class="calc-stat-box">
+                <div class="stat-metric-number" id="res-efficiency">+73%</div>
+                <div class="stat-metric-label">Execution Velocity Boost</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Role of AI in Business Automation -->
+          <h2>The Role of AI in Business Automation</h2>
+          <p>
+            Artificial intelligence is making automation more capable by helping systems analyze information, identify patterns, classify requests, and support decision-making.
+          </p>
+          <p>
+            For example, AI-powered tools can assist with customer inquiries, summarize business reports, categorize incoming requests, and help teams process information more efficiently.
+          </p>
+
+          <blockquote>
+            "Combining AI with automation can create smarter workflows, but businesses should also consider data security, accuracy, human oversight, and responsible implementation."
+            <br><span style="font-size: 0.88rem; font-weight: 700; color: var(--color-primary); margin-top: 6px; display: inline-block;">— Naina Technologies Automation Framework</span>
+          </blockquote>
+
+          <!-- Common Business Processes You Can Automate -->
+          <h2>Common Business Processes You Can Automate</h2>
+          <p>
+            Businesses can begin their automation journey with practical processes such as:
+          </p>
+
+          <div class="dept-process-grid">
+            <!-- Sales -->
+            <div class="dept-process-card">
+              <div class="dept-card-header">
+                <span>💼</span> Sales
+              </div>
+              <p class="dept-card-desc">
+                Lead assignment, follow-up reminders, and customer relationship management.
+              </p>
+            </div>
+
+            <!-- Finance -->
+            <div class="dept-process-card">
+              <div class="dept-card-header">
+                <span>📊</span> Finance
+              </div>
+              <p class="dept-card-desc">
+                Invoice generation, payment reminders, and expense reporting.
+              </p>
+            </div>
+
+            <!-- Human Resources -->
+            <div class="dept-process-card">
+              <div class="dept-card-header">
+                <span>👥</span> Human Resources
+              </div>
+              <p class="dept-card-desc">
+                Employee onboarding, attendance workflows, and document management.
+              </p>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="dept-process-card">
+              <div class="dept-card-header">
+                <span>🎧</span> Customer Support
+              </div>
+              <p class="dept-card-desc">
+                Ticket routing, frequently asked questions, and notifications.
+              </p>
+            </div>
+
+            <!-- Operations -->
+            <div class="dept-process-card">
+              <div class="dept-card-header">
+                <span>⚙️</span> Operations
+              </div>
+              <p class="dept-card-desc">
+                Inventory updates, approval workflows, and report generation.
+              </p>
+            </div>
+
+            <!-- IT Operations -->
+            <div class="dept-process-card">
+              <div class="dept-card-header">
+                <span>💻</span> IT Operations
+              </div>
+              <p class="dept-card-desc">
+                Routine monitoring, deployment tasks, and system alerts.
+              </p>
+            </div>
+          </div>
+
+          <p style="font-style: italic; color: var(--color-primary); font-weight: 600; margin-bottom: 28px;">
+            💡 The best starting point is usually a repetitive process that consumes time, causes delays, or creates frequent errors.
+          </p>
+
+          <!-- How to Get Started With Business Automation -->
+          <h2>How to Get Started With Business Automation</h2>
+          <p>
+            A successful automation strategy begins with understanding your business needs.
+          </p>
+
+          <div class="roadmap-steps-list">
+            <div class="roadmap-step-item">
+              <span class="step-num-pill">Step 1</span>
+              <div class="step-content-block">
+                <strong>Identify repetitive tasks:</strong> Find activities that require significant manual effort or repeated data entry.
+              </div>
+            </div>
+
+            <div class="roadmap-step-item">
+              <span class="step-num-pill">Step 2</span>
+              <div class="step-content-block">
+                <strong>Evaluate your existing systems:</strong> Understand which software, applications, and databases your business already uses.
+              </div>
+            </div>
+
+            <div class="roadmap-step-item">
+              <span class="step-num-pill">Step 3</span>
+              <div class="step-content-block">
+                <strong>Choose the right technology:</strong> Select automation tools, custom software, APIs, or AI solutions based on your requirements.
+              </div>
+            </div>
+
+            <div class="roadmap-step-item">
+              <span class="step-num-pill">Step 4</span>
+              <div class="step-content-block">
+                <strong>Start with a manageable workflow:</strong> Automate one process, test the results, and gather feedback from the people using it.
+              </div>
+            </div>
+
+            <div class="roadmap-step-item">
+              <span class="step-num-pill">Step 5</span>
+              <div class="step-content-block">
+                <strong>Measure and improve:</strong> Track processing time, error rates, operational costs, and employee productivity to understand the impact.
+              </div>
+            </div>
+          </div>
+
+          <!-- How Naina Technologies Can Help -->
+          <h2>How Naina Technologies Can Help</h2>
+          <p>
+            At <strong>Naina Technologies</strong>, we believe technology should simplify business operations and support long-term growth.
+          </p>
+          <p>
+            Our technology solutions can help businesses modernize their workflows, connect applications, and build scalable digital systems through:
+          </p>
+
+          <div class="naina-services-grid">
+            <div class="naina-service-card">
+              <div class="service-card-title">
+                <span>🛠️</span> Custom Software Development
+              </div>
+              <p class="service-card-desc">
+                Solutions designed around your business processes.
+              </p>
+            </div>
+
+            <div class="naina-service-card">
+              <div class="service-card-title">
+                <span>🔄</span> API & Enterprise Integration
+              </div>
+              <p class="service-card-desc">
+                Connecting applications and enabling smoother data exchange.
+              </p>
+            </div>
+
+            <div class="naina-service-card">
+              <div class="service-card-title">
+                <span>☁️</span> Cloud and DevOps
+              </div>
+              <p class="service-card-desc">
+                Supporting scalable infrastructure and streamlined software delivery.
+              </p>
+            </div>
+
+            <div class="naina-service-card">
+              <div class="service-card-title">
+                <span>🚀</span> Digital Transformation
+              </div>
+              <p class="service-card-desc">
+                Modernizing business operations through practical technology solutions.
+              </p>
+            </div>
+          </div>
+
+          <p>
+            Every business has different requirements, so the right automation approach begins with understanding your goals, challenges, and existing technology environment.
+          </p>
+
+          <!-- Conclusion -->
+          <h2>Conclusion</h2>
+          <p>
+            Business automation is more than a way to complete tasks faster. It helps organizations create consistent workflows, reduce repetitive effort, improve coordination, and prepare for future growth.
+          </p>
+          <p>
+            By identifying the right processes and implementing suitable technologies, businesses can turn everyday operational challenges into opportunities for improvement.
+          </p>
+
+          <!-- Ready to make your business more efficient? (CTA) -->
+          <div class="article-cta-box">
+            <h3 class="cta-box-title">Ready to make your business more efficient?</h3>
+            <p class="cta-box-desc">
+              Partner with Naina Technologies to explore technology solutions that simplify operations and support your business growth.
+            </p>
+            <div class="cta-contact-pills">
+              <a href="https://www.nainatechnologies.in" target="_blank" rel="noopener" class="cta-contact-pill">
+                <span>🌐</span> www.nainatechnologies.in
+              </a>
+              <a href="mailto:enquiry@nainatechnologies.in" class="cta-contact-pill">
+                <span>✉️</span> enquiry@nainatechnologies.in
+              </a>
+              <a href="tel:+919866037733" class="cta-contact-pill">
+                <span>📞</span> +91 98660 37733
+              </a>
+            </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER (Exact Dark Theme Match to Template Reference)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-main-grid">
+
+        <!-- Column 1: Brand & Tagline -->
+        <div class="footer-brand-col">
+          <a href="#home" class="brand-link" style="margin-bottom: 8px;">
+            <img src="assets/naina_logo_dark_bg.png" alt="Naina Technologies Logo" class="footer-brand-logo">
+          </a>
+          <p class="footer-desc">
+            A modern technology portal by Naina Technologies. Empowering businesses worldwide with intelligent workflow automation, scalable cloud architectures, and digital acceleration.
+          </p>
+
+          <div class="footer-social-row">
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Twitter">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Pinterest">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-social-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link-item">Home</a></li>
+            <li><a href="#discovery-hub" class="footer-link-item">Technology Hub</a></li>
+            <li><a href="#spotlight" class="footer-link-item">Spotlight</a></li>
+            <li><a href="#how-we-help" class="footer-link-item">How We Help</a></li>
+            <li><a href="#contact" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Technologies -->
+        <div>
+          <h4 class="footer-col-title">Technologies</h4>
+          <ul class="footer-links-list">
+            <li><a href="#discovery-hub" class="footer-link-item">Web Development</a></li>
+            <li><a href="#discovery-hub" class="footer-link-item">AI & Automation</a></li>
+            <li><a href="#discovery-hub" class="footer-link-item">Cloud & DevOps</a></li>
+            <li><a href="#discovery-hub" class="footer-link-item">Enterprise Solutions</a></li>
+            <li><a href="#how-we-help" class="footer-link-item">Digital Transformation</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Support -->
+        <div>
+          <h4 class="footer-col-title">Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="#documentation" class="footer-link-item">Documentation</a></li>
+            <li><a href="#faq" class="footer-link-item">FAQ</a></li>
+            <li><a href="#terms" class="footer-link-item">Terms & Conditions</a></li>
+            <li><a href="#privacy" class="footer-link-item">Privacy Policy</a></li>
+            <li><a href="#contact" class="footer-link-item">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Contact -->
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="contact-info-list">
+            <div class="contact-item-row">
+              <span class="contact-icon">🌐</span>
+              <a href="https://www.nainatechnologies.in" target="_blank" rel="noopener" style="color: inherit;">www.nainatechnologies.in</a>
+            </div>
+            <div class="contact-item-row">
+              <span class="contact-icon">📞</span>
+              <a href="tel:+919866037733" style="color: inherit;">+91 98660 37733</a>
+            </div>
+            <div class="contact-item-row">
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:enquiry@nainatechnologies.in" style="color: inherit;">enquiry@nainatechnologies.in</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Row -->
+      <div class="footer-bottom-bar">
+        <div>© 2026 Naina Technologies. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#sitemap">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
